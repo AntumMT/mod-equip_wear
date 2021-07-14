@@ -1,0 +1,4 @@
+
+# Enables/Disables wear for tools such as picks, axes,
+# shovels, etc.
+tool_wear (Enable tool wear) bool true

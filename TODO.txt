@@ -1,0 +1,4 @@
+
+TODO:
+- add disable weapon wear
+- add disable armor wear
