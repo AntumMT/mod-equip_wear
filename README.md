@@ -7,9 +7,12 @@ A [Minetest](https://www.minetest.net/) mod that allows tool & equipment wear to
 Armor mods supported:
 - [![3d_armor](https://img.shields.io/static/v1?label=ContentDB&message=3d_armor&color=%23375a7f&logo=minetest)](https://content.minetest.net/packages/stu/3d_armor/)
 
+![icon](screenshot.png)
+
 ### Licensing:
 
-- [MIT](LICENSE.txt)
+- Code: [MIT](LICENSE.txt)
+- Icon: [CC0](https://openclipart.org/detail/169233)
 
 ### Usage:
 
