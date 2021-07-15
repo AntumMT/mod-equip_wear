@@ -2,7 +2,7 @@
 
 ### Description:
 
-A [Minetest](https://www.minetest.net/) mod that allows tool & equipment wear to be disabled.
+A [Minetest](https://www.minetest.net/) mod that allows tool & equipment wear to be disabled. Supports tools (pick, axe, shovel, etc.), weapons, & armor.
 
 Armor mods supported:
 - [![3d_armor](https://img.shields.io/static/v1?label=ContentDB&message=3d_armor&color=%23375a7f&logo=minetest)](https://content.minetest.net/packages/stu/3d_armor/)
