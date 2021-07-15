@@ -22,6 +22,11 @@ weapon_wear
 - Enables/Disables wear for weapons.
 - type:    bool
 - default: true
+
+armor_wear
+- Enables/Disables wear for armor.
+- type:    bool
+- default: true
 ```
 
 ### Links:

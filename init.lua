@@ -1,6 +1,7 @@
 
 local tool_wear = core.settings:get_bool("tool_wear", true)
 local weapon_wear = core.settings:get_bool("weapon_wear", true)
+local armor_wear = core.settings:get_bool("armor_wear", true)
 
 core.register_on_mods_loaded(function()
 	-- hook into ItemStack meta table method
@@ -16,6 +17,21 @@ core.register_on_mods_loaded(function()
 			return add_wear_old(self, ...)
 		end
 	end
+
+	-- hook into 3d_armor API
+	--[[ doesn't seem to be necessary if "armor_use" set to "0" or "nil"
+	if not armor_wear and core.global_exists("armor") then
+		local armor_damage_old, armor_punch_old = armor.damage, armor.punch
+
+		armor.damage = function(self, player, index, stack, use)
+			return armor_damage_old(self, player, index, stack, 0)
+		end
+
+		armor.punch = function(self, player, hitter, time_from_last_punch, tool_capabilities)
+			return armor_punch_old(self, player, hitter, time_from_last_punch, tool_capabilities)
+		end
+	end
+	]]
 
 	-- override items
 	for tname, tdef in pairs(core.registered_tools) do
@@ -52,6 +68,17 @@ core.register_on_mods_loaded(function()
 			if new_def.tool_capabilities.damage_groups then
 			end
 			]]
+		end
+
+		if new_def.groups then
+			if new_def.groups.armor_use then
+				new_def.subtype = "armor"
+				override = true
+
+				if not armor_wear then
+					new_def.groups.armor_use = 0
+				end
+			end
 		end
 
 		if override then
