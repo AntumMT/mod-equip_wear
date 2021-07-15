@@ -8,8 +8,8 @@ core.register_on_mods_loaded(function()
 		local mt = getmetatable(ItemStack(""))
 		local add_wear_old = mt.add_wear
 		mt.add_wear = function(self, ...)
-			local i_type = core.registered_items[self:get_name()].type
-			if i_type and i_type == "tool" then
+			local r_item = core.registered_items[self:get_name()]
+			if r_item and r_item.subtype == "weapon" then
 				return true
 			end
 
@@ -17,13 +17,20 @@ core.register_on_mods_loaded(function()
 		end
 	end
 
+	-- override items
 	for tname, tdef in pairs(core.registered_tools) do
 		local new_def = table.copy(tdef)
 		local override = false
 
 		if new_def.tool_capabilities then
+			if new_def.tool_capabilities.punch_attack_uses then
+				new_def.subtype = "weapon"
+				override = true
+			end
+
 			if not weapon_wear then
 				new_def.tool_capabilities.punch_attack_uses = nil
+				override = true
 			end
 
 			if new_def.tool_capabilities.groupcaps then
@@ -35,6 +42,16 @@ core.register_on_mods_loaded(function()
 					end
 				end
 			end
+
+			--[[ NOTE: anything useful here?
+			for t, tc in pairs(new_def.tool_capabilities) do
+			end
+			]]
+
+			--[[ NOTE: should we check for "fleshy" here to set "weapon" sub-type?
+			if new_def.tool_capabilities.damage_groups then
+			end
+			]]
 		end
 
 		if override then
