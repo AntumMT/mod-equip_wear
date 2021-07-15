@@ -2,3 +2,6 @@
 # Enables/Disables wear for tools such as picks, axes,
 # shovels, etc.
 tool_wear (Enable tool wear) bool true
+
+# Enables/Disables wear for weapons.
+weapon_wear (Enable weapon wear) bool true
