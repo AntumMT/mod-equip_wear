@@ -34,6 +34,8 @@ armor_wear
 
 ### Links:
 
+- [![ContentDB](https://img.shields.io/static/v1?label=ContentDB&message=equip_wear&color=%23375a7f&logo=minetest)](https://content.minetest.net/packages/AntumDeluge/equip_wear/)
+- [Forum](https://forum.minetest.net/viewtopic.php?t=27019)
 - [Git repo](https://github.com/AntumMT/mod-equip_wear)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
