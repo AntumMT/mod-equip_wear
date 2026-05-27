@@ -1,0 +1,19 @@
+{
+	"type": "MOD",
+	"title": "Equipment Wear",
+	"name": "equip_wear",
+	"short_description": "Allows tool & equipment wear to be enabled or disabled.",
+	"dev_state": "MAINTENANCE_ONLY",
+	"ai_disclosure": "NONE",
+	"tags": ["tools"],
+	"content_warnings": null,
+	"license": "MIT",
+	"media_license": "MIT",
+	"repo": "https://codeberg.org/AntumLuanti/mod-equip_wear",
+	"website": null,
+	"issue_tracker": "https://codeberg.org/AntumLuanti/mod-equip_wear/issues",
+	"forums": "27019",
+	"video_url": null,
+	"donate_url": null,
+	"translation_url": null
+}
