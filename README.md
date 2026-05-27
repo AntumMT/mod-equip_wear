@@ -39,6 +39,9 @@ armor_wear
 
 - [![ContentDB](https://img.shields.io/static/v1?label=ContentDB&message=equip_wear&color=%23375a7f&logo=luanti)](https://content.luanti.org/packages/AntumDeluge/equip_wear/)
 - [Forum](https://forum.luanti.org/viewtopic.php?t=27019)
-- [Git repo](https://github.com/AntumMT/mod-equip_wear)
+- Git repos:
+    - [Codeberg](https://codeberg.org/AntumLuanti/mod-equip_wear)
+    - [GitHub](https://github.com/AntumMT/mod-equip_wear)
+    - [GitLab](https://gitlab.com/AntumMT/mod-equip_wear)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
