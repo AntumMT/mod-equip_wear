@@ -2,10 +2,10 @@
 
 ### Description:
 
-A [Minetest](https://www.minetest.net/) mod that allows tool & equipment wear to be disabled. Supports tools (pick, axe, shovel, etc.), weapons, & armor.
+A [Luanti](https://www.luanti.org/) mod that allows tool & equipment wear to be disabled. Supports tools (pick, axe, shovel, etc.), weapons, & armor.
 
 Armor mods supported:
-- [![3d_armor](https://img.shields.io/static/v1?label=ContentDB&message=3d_armor&color=%23375a7f&logo=minetest)](https://content.minetest.net/packages/stu/3d_armor/)
+- [![3d_armor](https://img.shields.io/static/v1?label=ContentDB&message=3d_armor&color=%23375a7f&logo=luanti)](https://content.luanti.org/packages/stu/3d_armor/)
 
 ![icon](screenshot.png)
 
@@ -37,8 +37,8 @@ armor_wear
 
 ### Links:
 
-- [![ContentDB](https://img.shields.io/static/v1?label=ContentDB&message=equip_wear&color=%23375a7f&logo=minetest)](https://content.minetest.net/packages/AntumDeluge/equip_wear/)
-- [Forum](https://forum.minetest.net/viewtopic.php?t=27019)
+- [![ContentDB](https://img.shields.io/static/v1?label=ContentDB&message=equip_wear&color=%23375a7f&logo=luanti)](https://content.luanti.org/packages/AntumDeluge/equip_wear/)
+- [Forum](https://forum.luanti.org/viewtopic.php?t=27019)
 - [Git repo](https://github.com/AntumMT/mod-equip_wear)
 - [Changelog](changelog.txt)
 - [TODO](TODO.txt)
